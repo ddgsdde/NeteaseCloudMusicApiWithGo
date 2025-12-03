@@ -1,0 +1,10 @@
+{
+  "type": "music",
+  "domain": "netease",
+  "name": "Netease Cloud Music",
+  "description": "Stream music from Netease via singo API",
+  "codeowners": [],
+  "requirements": [],
+  "documentation": "https://github.com/unknown/singo",
+  "multi_instance": true
+}

@@ -1,0 +1,25 @@
+services:
+  singo:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    ports:
+      - "3333:3333"
+    environment:
+      - GIN_MODE=release
+    restart: unless-stopped
+
+  music-assistant:
+    image: ghcr.io/music-assistant/server
+    depends_on:
+      - singo
+    volumes:
+      - ./data:/data
+      - ./providers/netease:/app/music_assistant/server/providers/netease  # Mount custom provider
+    network_mode: host
+    restart: unless-stopped
+    cap_add:
+      - SYS_ADMIN
+      - DAC_READ_SEARCH
+    security_opt:
+      - apparmor:unconfined
