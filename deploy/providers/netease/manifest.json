@@ -1,0 +1,18 @@
+{
+  "domain": "netease",
+  "name": "Netease Cloud Music",
+  "description": "Netease Cloud Music support for Music Assistant",
+  "documentation": "https://github.com/music-assistant/server/tree/master/music_assistant/server/providers/netease",
+  "requirements": [],
+  "config_entries": [
+    {
+      "key": "base_url",
+      "type": "string",
+      "label": "API Base URL",
+      "default_value": "http://localhost:3333",
+      "description": "URL of the Netease Cloud Music API server"
+    }
+  ],
+  "icon": "icon.png",
+  "type": "music_provider"
+}
