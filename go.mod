@@ -11,7 +11,8 @@ require (
 	github.com/go-redis/redis v6.15.3+incompatible
 	github.com/jinzhu/gorm v1.9.10
 	github.com/joho/godotenv v1.3.0
-	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
+	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
+	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 	gopkg.in/go-playground/validator.v8 v8.18.2
-	gopkg.in/yaml.v2 v2.2.2
+	gopkg.in/yaml.v2 v2.2.8
 )

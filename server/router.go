@@ -23,6 +23,9 @@ func NewRouter() *gin.Engine {
 		v1.POST("ping", api.Ping)
 
 		v1.GET("login/status", api.LoginStatus)
+		v1.GET("login/qr/key", api.LoginQrKey)
+		v1.GET("login/qr/create", api.LoginQrCreate)
+		v1.GET("login/qr/check", api.LoginQrCheck)
 		v1.GET("login/cellphone", api.LoginCellphone)
 		v1.GET("login", api.LoginEmail)
 		v1.GET("login/refresh", api.LoginRefresh)
