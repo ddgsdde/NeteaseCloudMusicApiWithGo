@@ -1,0 +1,10 @@
+{
+  "type": "music",
+  "domain": "netease",
+  "name": "Netease Cloud Music",
+  "codeowners": ["@yourusername"],
+  "documentation": "https://github.com/music-assistant/server",
+  "requirements": [],
+  "multi_instance": true,
+  "builtin": false
+}
