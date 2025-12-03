@@ -1,8 +1,8 @@
 {
   "domain": "netease",
   "name": "Netease Cloud Music",
-  "description": "Netease Cloud Music support for Music Assistant",
-  "documentation": "https://github.com/music-assistant/server/tree/master/music_assistant/server/providers/netease",
+  "description": "Netease Cloud Music Provider for Music Assistant",
+  "documentation": "https://github.com/music-assistant/server/tree/master/music_assistant/providers/netease",
   "requirements": [],
   "config_entries": [
     {
@@ -10,9 +10,21 @@
       "type": "string",
       "label": "API Base URL",
       "default_value": "http://localhost:3333",
-      "description": "URL of the Netease Cloud Music API server"
+      "description": "The URL where the Netease Cloud Music Go API is running."
+    },
+    {
+      "key": "phone",
+      "type": "string",
+      "label": "Phone Number (Optional)",
+      "description": "Your Netease account phone number. Leave empty if using QR code login via console log."
+    },
+    {
+      "key": "password",
+      "type": "secure_string",
+      "label": "Password (Optional)",
+      "description": "Your Netease account password."
     }
   ],
-  "icon": "icon.png",
-  "type": "music_provider"
+  "icon": "mdi:music-note",
+  "type": "music"
 }
