@@ -1,0 +1,38 @@
+{
+  "type": "music",
+  "domain": "netease_cloud_music",
+  "name": "Netease Cloud Music",
+  "description": "Play music from Netease Cloud Music via local API server",
+  "version": "1.0.0",
+  "codeowners": [],
+  "config_entries": [
+    {
+      "key": "api_url",
+      "type": "string",
+      "label": "API Server URL",
+      "default_value": "http://localhost:3333",
+      "description": "The URL of the NeteaseCloudMusicApiWithGo server"
+    },
+    {
+      "key": "phone",
+      "type": "string",
+      "label": "Phone Number",
+      "description": "Your Netease Cloud Music phone number"
+    },
+    {
+      "key": "password",
+      "type": "secure_string",
+      "label": "Password",
+      "description": "Your Netease Cloud Music password"
+    },
+    {
+      "key": "email",
+      "type": "string",
+      "label": "Email",
+      "description": "Your Netease Cloud Music email (optional, if using email login)"
+    }
+  ],
+  "requirements": [],
+  "documentation": "https://github.com/music-assistant/music-assistant",
+  "multi_instances": true
+}
